@@ -1,0 +1,366 @@
+
+################################################################################
+# Gelman-Rubin Diagnostic
+################################################################################
+
+Generally the Gelman diagnostic should be < 1.05
+
+
+Out of 98 variables: 0 > 1.01
+
+                      
+0 > 1.05
+
+                      
+0 > 1.1
+
+
+The worst variables are:
+
+             Point est. Upper C.I.
+p.fac1[9,1]    1.005422   1.020023
+p.fac1[9,2]    1.005422   1.020023
+p.fac1[41,1]   1.005385   1.019590
+p.fac1[41,2]   1.005385   1.019590
+p.fac1[12,1]   1.005133   1.019492
+p.fac1[12,2]   1.005133   1.019492
+p.fac1[28,1]   1.004901   1.017219
+p.fac1[28,2]   1.004901   1.017219
+fac1.sig       1.004624   1.017110
+p.fac1[26,1]   1.004577   1.016645
+
+
+And here are the Gelman diagnostics for all variables:
+
+              Point est. Upper C.I.
+deviance        1.001279   1.004027
+fac1.sig        1.004624   1.017110
+p.fac1[1,1]     1.002544   1.010144
+p.fac1[1,2]     1.002544   1.010144
+p.fac1[10,1]    1.004305   1.015919
+p.fac1[10,2]    1.004305   1.015919
+p.fac1[11,1]    1.003734   1.013875
+p.fac1[11,2]    1.003734   1.013875
+p.fac1[12,1]    1.005133   1.019492
+p.fac1[12,2]    1.005133   1.019492
+p.fac1[13,1]    1.003691   1.014401
+p.fac1[13,2]    1.003691   1.014401
+p.fac1[14,1]    1.003216   1.011668
+p.fac1[14,2]    1.003216   1.011668
+p.fac1[15,1]    1.004089   1.015861
+p.fac1[15,2]    1.004089   1.015861
+p.fac1[16,1]    1.003834   1.014265
+p.fac1[16,2]    1.003834   1.014265
+p.fac1[17,1]    1.002776   1.010084
+p.fac1[17,2]    1.002776   1.010084
+p.fac1[18,1]    1.003600   1.013512
+p.fac1[18,2]    1.003600   1.013512
+p.fac1[19,1]    1.003548   1.012534
+p.fac1[19,2]    1.003548   1.012534
+p.fac1[2,1]     1.001487   1.006033
+p.fac1[2,2]     1.001487   1.006033
+p.fac1[20,1]    1.003096   1.011647
+p.fac1[20,2]    1.003096   1.011647
+p.fac1[21,1]    1.002456   1.009062
+p.fac1[21,2]    1.002456   1.009062
+p.fac1[22,1]    1.002937   1.011379
+p.fac1[22,2]    1.002937   1.011379
+p.fac1[23,1]    1.001621   1.006692
+p.fac1[23,2]    1.001621   1.006692
+p.fac1[24,1]    1.002973   1.011882
+p.fac1[24,2]    1.002973   1.011882
+p.fac1[25,1]    1.004443   1.016480
+p.fac1[25,2]    1.004443   1.016480
+p.fac1[26,1]    1.004577   1.016645
+p.fac1[26,2]    1.004577   1.016645
+p.fac1[27,1]    1.003731   1.013972
+p.fac1[27,2]    1.003731   1.013972
+p.fac1[28,1]    1.004901   1.017219
+p.fac1[28,2]    1.004901   1.017219
+p.fac1[29,1]    1.002525   1.009715
+p.fac1[29,2]    1.002525   1.009715
+p.fac1[3,1]     1.001307   1.004980
+p.fac1[3,2]     1.001307   1.004980
+p.fac1[30,1]    1.003935   1.014629
+p.fac1[30,2]    1.003935   1.014629
+p.fac1[31,1]    1.003918   1.014965
+p.fac1[31,2]    1.003918   1.014965
+p.fac1[32,1]    1.001113   1.004707
+p.fac1[32,2]    1.001113   1.004707
+p.fac1[33,1]    1.003353   1.012867
+p.fac1[33,2]    1.003353   1.012867
+p.fac1[34,1]    1.003618   1.013155
+p.fac1[34,2]    1.003618   1.013155
+p.fac1[35,1]    1.002116   1.008315
+p.fac1[35,2]    1.002116   1.008315
+p.fac1[36,1]    1.002042   1.007818
+p.fac1[36,2]    1.002042   1.007818
+p.fac1[37,1]    1.003798   1.013438
+p.fac1[37,2]    1.003798   1.013438
+p.fac1[38,1]    1.001697   1.006959
+p.fac1[38,2]    1.001697   1.006959
+p.fac1[39,1]    1.001659   1.007004
+p.fac1[39,2]    1.001659   1.007004
+p.fac1[4,1]     1.001625   1.005910
+p.fac1[4,2]     1.001625   1.005910
+p.fac1[40,1]    1.001934   1.006370
+p.fac1[40,2]    1.001934   1.006370
+p.fac1[41,1]    1.005385   1.019590
+p.fac1[41,2]    1.005385   1.019590
+p.fac1[42,1]    1.003127   1.012262
+p.fac1[42,2]    1.003127   1.012262
+p.fac1[43,1]    1.003053   1.011469
+p.fac1[43,2]    1.003053   1.011469
+p.fac1[44,1]    1.002986   1.011536
+p.fac1[44,2]    1.002986   1.011536
+p.fac1[45,1]    1.003542   1.012769
+p.fac1[45,2]    1.003542   1.012769
+p.fac1[46,1]    1.003709   1.014379
+p.fac1[46,2]    1.003709   1.014379
+p.fac1[5,1]     1.002657   1.010915
+p.fac1[5,2]     1.002657   1.010915
+p.fac1[6,1]     1.003500   1.012965
+p.fac1[6,2]     1.003500   1.012965
+p.fac1[7,1]     1.003736   1.014650
+p.fac1[7,2]     1.003736   1.014650
+p.fac1[8,1]     1.003447   1.012910
+p.fac1[8,2]     1.003447   1.012910
+p.fac1[9,1]     1.005422   1.020023
+p.fac1[9,2]     1.005422   1.020023
+p.global[1]     1.003828   1.014499
+p.global[2]     1.003828   1.014499
+resid.prop[1]   1.000332   1.001143
+resid.prop[2]   1.000127   1.000721
+
+################################################################################
+# Heidelberger and Welch Diagnostic
+################################################################################
+
+A few failures is normal and acceptable...
+Number of failures in each chain (out of 
+98
+ variables):
+
+
+             Chain 1 Chain 2 Chain 3
+Stationarity       0       0       0
+Half-width         0       1       0
+
+
+And here are the Heidelberger-Welch diagnostics for all variables:
+
+              stest.1 pval.1 hwtest.1 stest.2 pval.2 hwtest.2 stest.3 pval.3 hwtest.3
+deviance         pass  0.472     pass    pass  0.970     pass    pass  0.202     pass
+fac1.sig         pass  0.314     pass    pass  0.708     fail    pass  0.419     pass
+p.fac1[1,1]      pass  0.508     pass    pass  0.403     pass    pass  0.593     pass
+p.fac1[1,2]      pass  0.508     pass    pass  0.403     pass    pass  0.593     pass
+p.fac1[10,1]     pass  0.686     pass    pass  0.837     pass    pass  0.737     pass
+p.fac1[10,2]     pass  0.686     pass    pass  0.837     pass    pass  0.737     pass
+p.fac1[11,1]     pass  0.716     pass    pass  0.770     pass    pass  0.901     pass
+p.fac1[11,2]     pass  0.716     pass    pass  0.770     pass    pass  0.901     pass
+p.fac1[12,1]     pass  0.782     pass    pass  0.784     pass    pass  0.845     pass
+p.fac1[12,2]     pass  0.782     pass    pass  0.784     pass    pass  0.845     pass
+p.fac1[13,1]     pass  0.727     pass    pass  0.667     pass    pass  0.736     pass
+p.fac1[13,2]     pass  0.727     pass    pass  0.667     pass    pass  0.736     pass
+p.fac1[14,1]     pass  0.730     pass    pass  0.595     pass    pass  0.495     pass
+p.fac1[14,2]     pass  0.730     pass    pass  0.595     pass    pass  0.495     pass
+p.fac1[15,1]     pass  0.731     pass    pass  0.557     pass    pass  0.635     pass
+p.fac1[15,2]     pass  0.731     pass    pass  0.557     pass    pass  0.635     pass
+p.fac1[16,1]     pass  0.631     pass    pass  0.780     pass    pass  0.663     pass
+p.fac1[16,2]     pass  0.631     pass    pass  0.780     pass    pass  0.663     pass
+p.fac1[17,1]     pass  0.487     pass    pass  0.615     pass    pass  0.492     pass
+p.fac1[17,2]     pass  0.487     pass    pass  0.615     pass    pass  0.492     pass
+p.fac1[18,1]     pass  0.872     pass    pass  0.815     pass    pass  0.756     pass
+p.fac1[18,2]     pass  0.872     pass    pass  0.815     pass    pass  0.756     pass
+p.fac1[19,1]     pass  0.719     pass    pass  0.541     pass    pass  0.762     pass
+p.fac1[19,2]     pass  0.719     pass    pass  0.541     pass    pass  0.762     pass
+p.fac1[2,1]      pass  0.627     pass    pass  0.741     pass    pass  0.256     pass
+p.fac1[2,2]      pass  0.627     pass    pass  0.741     pass    pass  0.256     pass
+p.fac1[20,1]     pass  0.738     pass    pass  0.592     pass    pass  0.498     pass
+p.fac1[20,2]     pass  0.738     pass    pass  0.592     pass    pass  0.498     pass
+p.fac1[21,1]     pass  0.788     pass    pass  0.826     pass    pass  0.510     pass
+p.fac1[21,2]     pass  0.788     pass    pass  0.826     pass    pass  0.510     pass
+p.fac1[22,1]     pass  0.656     pass    pass  0.691     pass    pass  0.484     pass
+p.fac1[22,2]     pass  0.656     pass    pass  0.691     pass    pass  0.484     pass
+p.fac1[23,1]     pass  0.738     pass    pass  0.826     pass    pass  0.517     pass
+p.fac1[23,2]     pass  0.738     pass    pass  0.826     pass    pass  0.517     pass
+p.fac1[24,1]     pass  0.790     pass    pass  0.719     pass    pass  0.766     pass
+p.fac1[24,2]     pass  0.790     pass    pass  0.719     pass    pass  0.766     pass
+p.fac1[25,1]     pass  0.770     pass    pass  0.780     pass    pass  0.811     pass
+p.fac1[25,2]     pass  0.770     pass    pass  0.780     pass    pass  0.811     pass
+p.fac1[26,1]     pass  0.580     pass    pass  0.494     pass    pass  0.647     pass
+p.fac1[26,2]     pass  0.580     pass    pass  0.494     pass    pass  0.647     pass
+p.fac1[27,1]     pass  0.798     pass    pass  0.635     pass    pass  0.677     pass
+p.fac1[27,2]     pass  0.798     pass    pass  0.635     pass    pass  0.677     pass
+p.fac1[28,1]     pass  0.754     pass    pass  0.721     pass    pass  0.809     pass
+p.fac1[28,2]     pass  0.754     pass    pass  0.721     pass    pass  0.809     pass
+p.fac1[29,1]     pass  0.512     pass    pass  0.709     pass    pass  0.698     pass
+p.fac1[29,2]     pass  0.512     pass    pass  0.709     pass    pass  0.698     pass
+p.fac1[3,1]      pass  0.577     pass    pass  0.672     pass    pass  0.379     pass
+p.fac1[3,2]      pass  0.577     pass    pass  0.672     pass    pass  0.379     pass
+p.fac1[30,1]     pass  0.658     pass    pass  0.714     pass    pass  0.974     pass
+p.fac1[30,2]     pass  0.658     pass    pass  0.714     pass    pass  0.974     pass
+p.fac1[31,1]     pass  0.634     pass    pass  0.781     pass    pass  0.907     pass
+p.fac1[31,2]     pass  0.634     pass    pass  0.781     pass    pass  0.907     pass
+p.fac1[32,1]     pass  0.727     pass    pass  0.714     pass    pass  0.354     pass
+p.fac1[32,2]     pass  0.727     pass    pass  0.714     pass    pass  0.354     pass
+p.fac1[33,1]     pass  0.546     pass    pass  0.806     pass    pass  0.569     pass
+p.fac1[33,2]     pass  0.546     pass    pass  0.806     pass    pass  0.569     pass
+p.fac1[34,1]     pass  0.603     pass    pass  0.710     pass    pass  0.413     pass
+p.fac1[34,2]     pass  0.603     pass    pass  0.710     pass    pass  0.413     pass
+p.fac1[35,1]     pass  0.508     pass    pass  0.616     pass    pass  0.546     pass
+p.fac1[35,2]     pass  0.508     pass    pass  0.616     pass    pass  0.546     pass
+p.fac1[36,1]     pass  0.548     pass    pass  0.749     pass    pass  0.443     pass
+p.fac1[36,2]     pass  0.548     pass    pass  0.749     pass    pass  0.443     pass
+p.fac1[37,1]     pass  0.661     pass    pass  0.691     pass    pass  0.526     pass
+p.fac1[37,2]     pass  0.661     pass    pass  0.691     pass    pass  0.526     pass
+p.fac1[38,1]     pass  0.538     pass    pass  0.613     pass    pass  0.456     pass
+p.fac1[38,2]     pass  0.538     pass    pass  0.613     pass    pass  0.456     pass
+p.fac1[39,1]     pass  0.644     pass    pass  0.640     pass    pass  0.449     pass
+p.fac1[39,2]     pass  0.644     pass    pass  0.640     pass    pass  0.449     pass
+p.fac1[4,1]      pass  0.611     pass    pass  0.669     pass    pass  0.418     pass
+p.fac1[4,2]      pass  0.611     pass    pass  0.669     pass    pass  0.418     pass
+p.fac1[40,1]     pass  0.767     pass    pass  0.654     pass    pass  0.480     pass
+p.fac1[40,2]     pass  0.767     pass    pass  0.654     pass    pass  0.480     pass
+p.fac1[41,1]     pass  0.801     pass    pass  0.624     pass    pass  0.876     pass
+p.fac1[41,2]     pass  0.801     pass    pass  0.624     pass    pass  0.876     pass
+p.fac1[42,1]     pass  0.726     pass    pass  0.625     pass    pass  0.674     pass
+p.fac1[42,2]     pass  0.726     pass    pass  0.625     pass    pass  0.674     pass
+p.fac1[43,1]     pass  0.862     pass    pass  0.527     pass    pass  0.696     pass
+p.fac1[43,2]     pass  0.862     pass    pass  0.527     pass    pass  0.696     pass
+p.fac1[44,1]     pass  0.821     pass    pass  0.648     pass    pass  0.729     pass
+p.fac1[44,2]     pass  0.821     pass    pass  0.648     pass    pass  0.729     pass
+p.fac1[45,1]     pass  0.626     pass    pass  0.735     pass    pass  0.664     pass
+p.fac1[45,2]     pass  0.626     pass    pass  0.735     pass    pass  0.664     pass
+p.fac1[46,1]     pass  0.495     pass    pass  0.543     pass    pass  0.799     pass
+p.fac1[46,2]     pass  0.495     pass    pass  0.543     pass    pass  0.799     pass
+p.fac1[5,1]      pass  0.759     pass    pass  0.753     pass    pass  0.362     pass
+p.fac1[5,2]      pass  0.759     pass    pass  0.753     pass    pass  0.362     pass
+p.fac1[6,1]      pass  0.628     pass    pass  0.562     pass    pass  0.730     pass
+p.fac1[6,2]      pass  0.628     pass    pass  0.562     pass    pass  0.730     pass
+p.fac1[7,1]      pass  0.673     pass    pass  0.718     pass    pass  0.369     pass
+p.fac1[7,2]      pass  0.673     pass    pass  0.718     pass    pass  0.369     pass
+p.fac1[8,1]      pass  0.693     pass    pass  0.547     pass    pass  0.666     pass
+p.fac1[8,2]      pass  0.693     pass    pass  0.547     pass    pass  0.666     pass
+p.fac1[9,1]      pass  0.658     pass    pass  0.747     pass    pass  0.710     pass
+p.fac1[9,2]      pass  0.658     pass    pass  0.747     pass    pass  0.710     pass
+p.global[1]      pass  0.729     pass    pass  0.598     pass    pass  0.635     pass
+p.global[2]      pass  0.729     pass    pass  0.598     pass    pass  0.635     pass
+resid.prop[1]    pass  0.246     pass    pass  0.265     pass    pass  0.643     pass
+resid.prop[2]    pass  0.923     pass    pass  0.598     pass    pass  0.109     pass
+
+################################################################################
+# Geweke Diagnostic
+################################################################################
+
+The Geweke diagnostic is a standard z-score, so we'd expect 5% to be outside +/-1.96
+Number of variables outside +/-1.96 in each chain (out of 
+98
+):
+
+
+       Chain 1 Chain 2 Chain 3
+Geweke       0       0       0
+
+
+And here are the Geweke diagnostics for all variables:
+
+              chain1 chain2 chain3
+deviance      -0.183  0.297  0.653
+fac1.sig       0.047  0.276 -0.368
+p.fac1[1,1]   -1.407  0.155  0.468
+p.fac1[1,2]    1.407 -0.155 -0.468
+p.fac1[10,1]  -1.124  0.097  0.641
+p.fac1[10,2]   1.124 -0.097 -0.641
+p.fac1[11,1]  -0.992  0.014  0.676
+p.fac1[11,2]   0.992 -0.014 -0.676
+p.fac1[12,1]  -0.892  0.317  0.733
+p.fac1[12,2]   0.892 -0.317 -0.733
+p.fac1[13,1]  -1.018  0.071  0.742
+p.fac1[13,2]   1.018 -0.071 -0.742
+p.fac1[14,1]  -1.074 -0.300  0.445
+p.fac1[14,2]   1.074  0.300 -0.445
+p.fac1[15,1]  -0.887 -0.004  0.486
+p.fac1[15,2]   0.887  0.004 -0.486
+p.fac1[16,1]  -1.223 -0.038  0.686
+p.fac1[16,2]   1.223  0.038 -0.686
+p.fac1[17,1]  -1.446  0.102  0.628
+p.fac1[17,2]   1.446 -0.102 -0.628
+p.fac1[18,1]  -0.697 -0.057  0.720
+p.fac1[18,2]   0.697  0.057 -0.720
+p.fac1[19,1]  -0.951 -0.113  0.715
+p.fac1[19,2]   0.951  0.113 -0.715
+p.fac1[2,1]   -1.231 -0.138 -0.012
+p.fac1[2,2]    1.231  0.138  0.012
+p.fac1[20,1]  -1.234 -0.149  0.536
+p.fac1[20,2]   1.234  0.149 -0.536
+p.fac1[21,1]  -1.139  0.016  0.604
+p.fac1[21,2]   1.139 -0.016 -0.604
+p.fac1[22,1]  -1.582 -0.217  0.570
+p.fac1[22,2]   1.582  0.217 -0.570
+p.fac1[23,1]  -1.197  0.226  0.736
+p.fac1[23,2]   1.197 -0.226 -0.736
+p.fac1[24,1]  -0.976 -0.210  0.578
+p.fac1[24,2]   0.976  0.210 -0.578
+p.fac1[25,1]  -0.779  0.105  0.813
+p.fac1[25,2]   0.779 -0.105 -0.813
+p.fac1[26,1]  -0.986 -0.230  0.679
+p.fac1[26,2]   0.986  0.230 -0.679
+p.fac1[27,1]  -1.303 -0.101  0.720
+p.fac1[27,2]   1.303  0.101 -0.720
+p.fac1[28,1]  -1.163  0.290  0.609
+p.fac1[28,2]   1.163 -0.290 -0.609
+p.fac1[29,1]  -1.002  0.010  0.742
+p.fac1[29,2]   1.002 -0.010 -0.742
+p.fac1[3,1]   -1.320  0.098  0.558
+p.fac1[3,2]    1.320 -0.098 -0.558
+p.fac1[30,1]  -0.822 -0.154  0.783
+p.fac1[30,2]   0.822  0.154 -0.783
+p.fac1[31,1]  -0.812  0.169  0.530
+p.fac1[31,2]   0.812 -0.169 -0.530
+p.fac1[32,1]  -1.341  0.049  0.364
+p.fac1[32,2]   1.341 -0.049 -0.364
+p.fac1[33,1]  -1.330 -0.127  0.365
+p.fac1[33,2]   1.330  0.127 -0.365
+p.fac1[34,1]  -1.177  0.363  0.576
+p.fac1[34,2]   1.177 -0.363 -0.576
+p.fac1[35,1]  -1.355 -0.170  0.645
+p.fac1[35,2]   1.355  0.170 -0.645
+p.fac1[36,1]  -1.144  0.120  0.528
+p.fac1[36,2]   1.144 -0.120 -0.528
+p.fac1[37,1]  -1.210  0.005  0.655
+p.fac1[37,2]   1.210 -0.005 -0.655
+p.fac1[38,1]  -1.343  0.066  0.637
+p.fac1[38,2]   1.343 -0.066 -0.637
+p.fac1[39,1]  -1.152  0.145  0.504
+p.fac1[39,2]   1.152 -0.145 -0.504
+p.fac1[4,1]   -1.382 -0.131  0.552
+p.fac1[4,2]    1.382  0.131 -0.552
+p.fac1[40,1]  -1.101  0.091  0.750
+p.fac1[40,2]   1.101 -0.091 -0.750
+p.fac1[41,1]  -0.983 -0.229  1.020
+p.fac1[41,2]   0.983  0.229 -1.020
+p.fac1[42,1]  -1.084  0.135  0.566
+p.fac1[42,2]   1.084 -0.135 -0.566
+p.fac1[43,1]  -0.919  0.136  0.774
+p.fac1[43,2]   0.919 -0.136 -0.774
+p.fac1[44,1]  -0.841 -0.142  0.729
+p.fac1[44,2]   0.841  0.142 -0.729
+p.fac1[45,1]  -1.095 -0.082  0.515
+p.fac1[45,2]   1.095  0.082 -0.515
+p.fac1[46,1]  -1.298 -0.081  0.836
+p.fac1[46,2]   1.298  0.081 -0.836
+p.fac1[5,1]   -1.172 -0.254  0.411
+p.fac1[5,2]    1.172  0.254 -0.411
+p.fac1[6,1]   -1.034  0.161  0.801
+p.fac1[6,2]    1.034 -0.161 -0.801
+p.fac1[7,1]   -1.144  0.163  0.669
+p.fac1[7,2]    1.144 -0.163 -0.669
+p.fac1[8,1]   -1.018  0.039  0.398
+p.fac1[8,2]    1.018 -0.039 -0.398
+p.fac1[9,1]   -0.934 -0.162  0.472
+p.fac1[9,2]    0.934  0.162 -0.472
+p.global[1]   -1.016 -0.042  0.629
+p.global[2]    1.016  0.042 -0.629
+resid.prop[1] -0.305  1.086 -0.048
+resid.prop[2] -0.324  0.379 -0.534

@@ -1,0 +1,75 @@
+
+################################################################################
+# Gelman-Rubin Diagnostic
+################################################################################
+
+Generally the Gelman diagnostic should be < 1.05
+
+
+Out of 11 variables: 0 > 1.01
+
+                      
+0 > 1.05
+
+                      
+0 > 1.1
+
+
+The worst variables are:
+
+              Point est. Upper C.I.
+p.global[2]     1.006593   1.022034
+p.fac1[1,2]     1.006593   1.022034
+p.fac1[1,1]     1.006593   1.022034
+p.global[1]     1.006593   1.022034
+p.fac1[3,1]     1.005939   1.019365
+p.fac1[3,2]     1.005939   1.019365
+p.fac1[2,2]     1.004438   1.013114
+p.fac1[2,1]     1.004438   1.013114
+resid.prop[2]   1.001137   1.002163
+deviance        1.000892   1.003875
+
+
+And here are the Gelman diagnostics for all variables:
+
+              Point est. Upper C.I.
+deviance        1.000892   1.003875
+p.fac1[1,1]     1.006593   1.022034
+p.fac1[1,2]     1.006593   1.022034
+p.fac1[2,1]     1.004438   1.013114
+p.fac1[2,2]     1.004438   1.013114
+p.fac1[3,1]     1.005939   1.019365
+p.fac1[3,2]     1.005939   1.019365
+p.global[1]     1.006593   1.022034
+p.global[2]     1.006593   1.022034
+resid.prop[1]   1.000484   1.002333
+resid.prop[2]   1.001137   1.002163
+
+################################################################################
+# Geweke Diagnostic
+################################################################################
+
+The Geweke diagnostic is a standard z-score, so we'd expect 5% to be outside +/-1.96
+Number of variables outside +/-1.96 in each chain (out of 
+11
+):
+
+
+       Chain 1 Chain 2 Chain 3
+Geweke       0       0       0
+
+
+And here are the Geweke diagnostics for all variables:
+
+              chain1 chain2 chain3
+deviance      -0.857  1.230 -0.841
+p.fac1[1,1]   -0.430 -0.110 -0.020
+p.fac1[1,2]    0.430  0.110  0.020
+p.fac1[2,1]   -0.107  0.016  0.018
+p.fac1[2,2]    0.107 -0.016 -0.018
+p.fac1[3,1]   -0.212  0.047  0.086
+p.fac1[3,2]    0.212 -0.047 -0.086
+p.global[1]   -0.430 -0.110 -0.020
+p.global[2]    0.430  0.110  0.020
+resid.prop[1] -0.004  0.793  1.058
+resid.prop[2]  0.113  0.983 -0.469

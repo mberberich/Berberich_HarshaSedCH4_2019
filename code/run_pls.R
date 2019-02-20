@@ -11,7 +11,7 @@ source('code/utilities.R')
 #### Prepare data ####
 
 master <- read.xlsx("data/process/master_by_sample.xlsx")
-pls_extra <- read.xlsx("data/process/pls_extra_variabes.xlsx")
+pls_extra <- read.xlsx("data/raw/pls_extra_variabes.xlsx")
 
 master_pls <- master %>%
   select("sample.id", "umol.CH4.day.cm3", "om.autoc.proportion", "density.g.ml", "doc.mg.l", "suva254", "fi", "bix", "rfe", "hix", "d15n", "d13c.org", "n.percent", "c.percent.org", "cn", "OM.drywt.percent") 

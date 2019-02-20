@@ -1,9 +1,6 @@
-Download the [latest release](https://github.com/SchlossLab/new_project/releases/latest) to the directory and decompress
+## Spatial variability of sediment methane production and methanogen communities within a eutrophic reservoir: importance of organic matter source and quantity
 
-
-## TITLE OF YOUR PAPER GOES HERE
-
-YOUR PAPER'S ABSTRACT GOES HERE
+Freshwater reservoirs are an important source of the greenhouse gas methane (CH4) to the atmosphere, but global emission estimates are poorly constrained (13.3 – 52.5 Tg C yr-1), partially due to extreme spatial variability in emission rates within and among reservoirs. Spatial heterogeneity in the availability of organic matter (OM) for biological CH4 production by methanogenic archaea may be an important contributor to this variation. To explore this, we measured sediment CH4 potential production rates, OM source and quantity, and methanogen community composition at fifteen sites within a eutrophic reservoir in Ohio, USA. CH4 production rates were highest in the riverine portion of the reservoir near the main inlet. This pattern persisted even when rates were normalized to OM quantity, indicating that OM was more readily utilized by methanogens in the riverine zone. Sediment stable isotopes and C:N indicated a greater proportion of terrestrial OM in the bulk sediment of this zone. Methanogens were present at all sites, and while taxa were similar across zones, the riverine zone contained a higher relative abundance of methanogens capable of acetoclastic and methylotrophic methanogenesis, likely reflecting differences in decomposition processes or OM quality. While we found that methane production rates were negatively correlated with algal-derived carbon in bulk sediment OM, production rates were positively correlated with indicators of algal-derived carbon in the porewater dissolved OM. It is likely that both dissolved and bulk OM affect CH4 production rates, and that both terrestrial and aquatic OM sources are important in the riverine methane production hotspot. 
 
 
 
@@ -12,17 +9,7 @@ YOUR PAPER'S ABSTRACT GOES HERE
 
 	project
 	|- README          # the top level description of content (this doc)
-	|- CONTRIBUTING    # instructions for how to contribute to your project
 	|- LICENSE         # the license for this project
-	|
-	|- submission/
-	| |- study.Rmd    # executable Rmarkdown for this study, if applicable
-	| |- study.md     # Markdown (GitHub) version of the *.Rmd file
-	| |- study.tex    # TeX version of *.Rmd file
-	| |- study.pdf    # PDF version of *.Rmd file
-	| |- header.tex   # LaTeX header file to format pdf version of manuscript
-	| |- references.bib # BibTeX formatted references
-	| |- XXXX.csl     # csl file to format references for journal XXX
 	|
 	|- data           # raw and primary data, are not changed once created
 	| |- references/  # reference files to be used in analysis
@@ -34,13 +21,9 @@ YOUR PAPER'S ABSTRACT GOES HERE
 	|- code/          # any programmatic code
 	|
 	|- results        # all output from workflows and analyses
-	| |- tables/      # text version of tables to be rendered with kable in R
-	| |- figures/     # graphs, likely designated for manuscript figures
+	| |- tables/      # xlsx version of tables generated with scripts, including SI
+	| |- figures/     # figures, including SI
 	| +- pictures/    # diagrams, images, and other non-graph graphics
-	|
-	|- exploratory/   # exploratory data analysis for study
-	| |- notebook/    # preliminary analyses
-	| +- scratch/     # temporary files that can be safely deleted or lost
 	|
 	+- Makefile       # executable Makefile for this study, if applicable
 
@@ -60,7 +43,3 @@ To regenerate this repository, as well as all of the analyses, you will need to 
 
 #### Running analysis
 
-```
-git clone https://github.com/SchlossLab/LastName_BriefDescription_Journal_Year.git
-make write.paper
-```

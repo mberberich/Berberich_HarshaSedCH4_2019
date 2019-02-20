@@ -2,6 +2,7 @@
 .Rhistory
 .RData
 .Rprofile
+.Rapp.history
 
 .DS_Store
 
@@ -15,8 +16,7 @@ mothur*logfile
 *.docx
 
 submission/*/*
-!submission/manuscript_LO.docx
-!submission/cover_letter_LO.docx
+
 
 results/pictures/mixing_model_biplot_extras/*
 
@@ -26,3 +26,5 @@ code/test/*
 CONTRIBUTING.md
 analysis_driver.bash
 Makefile
+
+exploratory/*

@@ -15,8 +15,8 @@ mothur*logfile
 *temp*
 *.docx
 
-submission/
-
+submission/*
+exploratory/*
 
 results/pictures/mixing_model_biplot_extras/*
 
@@ -27,4 +27,3 @@ CONTRIBUTING.md
 analysis_driver.bash
 Makefile
 
-exploratory/

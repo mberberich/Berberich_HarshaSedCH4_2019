@@ -15,7 +15,7 @@ mothur*logfile
 *temp*
 *.docx
 
-submission/*/*
+submission/*
 
 
 results/pictures/mixing_model_biplot_extras/*

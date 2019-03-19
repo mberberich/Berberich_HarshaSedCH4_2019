@@ -58,7 +58,7 @@ om_quantity_graph <- grid.arrange(
 )
 
 ggsave(file = "results/figures/figure3_sediment_om_quantity.pdf", om_quantity_graph, 
-       width=7.3, height = 4, dpi = 300)
+       width=7.3, height = 4, dpi = 1200)
 
 rm(DOC_sub)
 rm(om_quantity_graph)

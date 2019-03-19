@@ -100,6 +100,6 @@ om_source_dissolved <- grid.arrange(
 )
 
 ggsave(file = "results/figures/figure5_dissolved_om_optical.pdf", om_source_dissolved, 
-       width=7.3, height = 6, dpi = 300)
+       width=7.3, height = 6, dpi = 1200)
 
 rm(om_source_dissolved)

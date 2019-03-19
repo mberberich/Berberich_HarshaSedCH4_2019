@@ -75,6 +75,6 @@ heatmap.genus <- amp_heatmap(data = physeq_meth_n,
 
 
 ggsave(file = "results/figures/figure6_methanogen_heatmap_genus.pdf", heatmap.genus, 
-       width=6, height = 4, dpi = 300)
+       width=6, height = 4, dpi = 1200)
 
 rm(list = c('sample_otus', 'sample_variables', 'otu_taxonomy', 'otumat.num','sampledata', 'taxmat', 'heatmap.genus', 'OTU', 'physeq', 'physeq_meth', 'physeq_meth_n', 'physeq_O_bacteriales', 'physeq_O_cellales', 'physeq_O_microbia_unclassified', 'physeq_O_microbiales', 'physeq_O_sarcinales', 'TAX'))

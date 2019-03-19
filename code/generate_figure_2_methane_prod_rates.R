@@ -34,7 +34,8 @@ ch4_fig <- grid.arrange(
           panel.grid.major = element_blank(),
           text=element_text(size=12),
           plot.title = element_text(face="bold", hjust = -0.065, size = 20),
-          panel.border = element_rect(size = 1, fill = NA)) +
+          panel.border = element_rect(size = 1, fill = NA),
+          axis.text.x = element_text(size = 12)) +
     geom_jitter() +
     annotate('text', x = 1, y = 2.0, 
              label = " a ",parse = TRUE,size=5) +
@@ -43,34 +44,18 @@ ch4_fig <- grid.arrange(
     annotate('text', x = 3, y = 2.01, 
              label = " b ",parse = TRUE,size=5),
   
-  ggplot(master, aes(zone, umol.CH4.day.g.sed)) +
+  
+  ggplot(master, aes(zone, umol.CH4.day.g.om)) +
     geom_boxplot(outlier.size = 0, outlier.colour = NULL) +
-    labs(y=expression(Methane~Production~Rates~" ("~µmol~g~sed^{-1}~d^{-1}~") "),
+    labs(y=expression(Methane~Production~Rates~" ("~µmol~g~OM^{-1}~d^{-1}~") "),
          x=expression("")) +
     scale_x_discrete(limits = c("riverine", "transitional", "lacustrine")) + ggtitle("B") +
     theme(panel.background = element_rect(fill = "white"),
           panel.grid.major = element_blank(),
           text=element_text(size=12),
           plot.title = element_text(face="bold", hjust = -0.065, size = 20),
-          panel.border = element_rect(size = 1, fill = NA)) +
-    geom_jitter() +
-    annotate('text', x = 1, y = 3.0, 
-             label = " a ",parse = TRUE,size=5) +
-    annotate('text', x = 2, y = 3.0, 
-             label = " a ",parse = TRUE,size=5) +
-    annotate('text', x = 3, y = 3.0, 
-             label = " a ",parse = TRUE,size=5) ,
-  
-  ggplot(master, aes(zone, umol.CH4.day.g.om)) +
-    geom_boxplot(outlier.size = 0, outlier.colour = NULL) +
-    labs(y=expression(Methane~Production~Rates~" ("~µmol~g~OM^{-1}~d^{-1}~") "),
-         x=expression("")) +
-    scale_x_discrete(limits = c("riverine", "transitional", "lacustrine")) + ggtitle("C") +
-    theme(panel.background = element_rect(fill = "white"),
-          panel.grid.major = element_blank(),
-          text=element_text(size=12),
-          plot.title = element_text(face="bold", hjust = -0.065, size = 20),
-          panel.border = element_rect(size = 1, fill = NA)) +
+          panel.border = element_rect(size = 1, fill = NA),
+          axis.text.x = element_text(size = 12)) +
     geom_jitter() +
     annotate('text', x = 1, y = 43, 
              label = " a ",parse = TRUE,size=5) +
@@ -80,11 +65,33 @@ ch4_fig <- grid.arrange(
              label = " b ",parse = TRUE,size=5) ,
   
   
+  ggplot(master, aes(zone, umol.CH4.day.g.sed)) +
+    geom_boxplot(outlier.size = 0, outlier.colour = NULL) +
+    labs(y=expression(Methane~Production~Rates~" ("~µmol~g~sed^{-1}~d^{-1}~") "),
+         x=expression("")) +
+    scale_x_discrete(limits = c("riverine", "transitional", "lacustrine")) + ggtitle("C") +
+    theme(panel.background = element_rect(fill = "white"),
+          panel.grid.major = element_blank(),
+          text=element_text(size=12),
+          plot.title = element_text(face="bold", hjust = -0.065, size = 20),
+          panel.border = element_rect(size = 1, fill = NA),
+          axis.text.x = element_text(size = 12)) +
+    geom_jitter() +
+    annotate('text', x = 1, y = 3.0, 
+             label = " a ",parse = TRUE,size=5) +
+    annotate('text', x = 2, y = 3.0, 
+             label = " a ",parse = TRUE,size=5) +
+    annotate('text', x = 3, y = 3.0, 
+             label = " a ",parse = TRUE,size=5) ,
+  
+  
+  
+  
   nrow = 1, ncol = 3
 )
 
 ggsave(file = "results/figures/figure2_ch4_production.pdf", ch4_fig, 
-       width=11, height = 4, dpi = 300)
+       width=11, height = 4, dpi = 1200)
 
 rm(ch4_fig)
 

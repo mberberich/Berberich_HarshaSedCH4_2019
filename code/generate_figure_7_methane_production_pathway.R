@@ -56,6 +56,6 @@ pathway_graph <- grid.arrange(
 )
 
 ggsave(file = "results/figures/figure7_methane_production_pathway.pdf", pathway_graph, 
-       width=7.3, height = 4, dpi = 300)
+       width=7.3, height = 4, dpi = 1200)
 
 rm(pathway_graph)

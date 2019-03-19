@@ -50,21 +50,35 @@ xscores <- data.frame(harsha_pls$x.scores) %>%
 xscores_info <- left_join(xscores, sample.info, by = "count") #%>%
   #unite(id, site.id, core, sep="")
 
-pls_plot <- xscores_info %>%
+#pls_plot <- xscores_info %>%
+#  ggplot(aes(t1, t2, color = zone)) +
+#  #geom_point() + 
+#  geom_text(aes(label=site.id), fontface = "bold", check_overlap = TRUE) +
+#  theme(panel.background = element_rect(fill = "white"),
+#        panel.grid.major = element_line(color="gray"),
+#        panel.grid.minor = element_line(color="gray"),
+#        text=element_text(size=12),
+#        plot.title = element_text(face="bold", hjust = -0.065, size = 20),
+#        panel.border = element_rect(size = 1, fill = NA))
+
+
+pls_plot_overlap <- xscores_info %>%
   ggplot(aes(t1, t2, color = zone)) +
   #geom_point() + 
-  geom_text(aes(label=site.id), fontface = "bold", check_overlap = TRUE) +
+  geom_text(aes(label=site.id), fontface = "bold") +
   theme(panel.background = element_rect(fill = "white"),
         panel.grid.major = element_line(color="gray"),
         panel.grid.minor = element_line(color="gray"),
         text=element_text(size=12),
         plot.title = element_text(face="bold", hjust = -0.065, size = 20),
         panel.border = element_rect(size = 1, fill = NA))
-
 #within geom_text can use check_overlap = TRUE to remove overlapping names
 
-ggsave(file = "results/figures/figure8_pls.pdf", pls_plot, 
-       width=9, height = 4, dpi = 300)
+ggsave(file = "results/figures/figure8_pls.pdf", pls_plot_overlap, 
+       width=9, height = 4, dpi = 1200)
+
+#ggsave(file = "results/figures/figure8_pls_overlap1.pdf", pls_plot_overlap, 
+#       width=9, height = 4, dpi = 1200)
 
 #### Supplemental figures and tables ####
 

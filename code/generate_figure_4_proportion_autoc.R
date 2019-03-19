@@ -10,53 +10,44 @@ library(gridExtra)
 library(png)
 library(grid)
 
-biplot<-readPNG("results/pictures/mixing_model_biplot.png")
-#biplot.raster <- as.raster(biplot)
-#rasterImage(biplot.raster, xleft = 1, xright = 1, ybottom = 2, ytop = 1)
-
-#plot(NA,xlim=c(0,nrow(biplot.raster)),ylim=c(0,ncol(biplot.raster)))
-#rasterImage(biplot.raster,300,300,nrow(biplot.raster),ncol(biplot.raster))
-#fig6.a <- grob(plot)
-#plot <- grid.raster(biplot.raster)
-
-#plotRGB(biplot.raster)
-## load data
-## 
-grob1<- rasterGrob(biplot, height = unit(1, "npc"), width = unit(1, "npc"))
-
 master <- read.xlsx("data/process/master_by_sample.xlsx")
+em_iso <- read.xlsx("data/process/mixing_model/end_member_isotopes.xlsx")
+
+em_iso_summary <- em_iso %>%
+  group_by(Source) %>%
+  summarize(sd15n = sd(d15N),
+            sdNC = sd(NC),
+            mean15n = mean(d15N),
+            meanNC = mean(NC))
 
 
-### make empty ggplot
-### 
-dat <- data.frame(x=runif(0),y=runif(0))
-
-p <- ggplot(dat, aes(x=x, y=y)) + 
-  geom_point() +
-  scale_x_continuous(expand=c(0,0)) + 
-  scale_y_continuous(expand=c(0,0))   
-
-p1 <- p + theme(axis.line=element_blank(),axis.text.x=element_blank(),
-          axis.text.y=element_blank(),axis.ticks=element_blank(),
-          axis.title.x=element_blank(),
-          axis.title.y=element_blank(),legend.position="none",
-          panel.background=element_blank(),panel.border=element_blank(),panel.grid.major=element_blank(),
-          panel.grid.minor=element_blank(),plot.background=element_blank()) +
-  geom_blank()
-
-
-#p1 + ggtitle("A") + theme(plot.title = element_text(face="bold", size = 20)) + annotation_custom(grob = grob1) 
-# make plot of proportion of autochthonous OM
 
 om_autoc_graph <- grid.arrange(
   
-  p1 + ggtitle("A") + theme(plot.title = element_text(face="bold", hjust = 0.12, size = 20)) + annotation_custom(grob = grob1) ,
+  ggplot() +
+    geom_point(data = em_iso_summary, aes(x = meanNC, y = mean15n)) +
+    geom_text(data = em_iso_summary, aes(x = meanNC, y = mean15n, label = Source), hjust = 0, nudge_x = 0.03) +
+    geom_errorbar(data = em_iso_summary, aes(x = meanNC, ymin = mean15n + sd15n, ymax = mean15n - sd15n), width = 0.004) +
+    geom_errorbarh(data = em_iso_summary, aes(y = mean15n, xmin = meanNC + sdNC, xmax = meanNC - sdNC, height = 0.2)) +
+    geom_point(data = master, aes(x = nc, y = d15n, color = zone)) +
+    xlim(0, 0.25) +
+    ylim(0, 12.5) +
+    ggtitle("A") +
+    theme(panel.background = element_rect(fill = "white"),
+          panel.grid.major = element_line(color = "grey90"),
+          text=element_text(size=12),
+          plot.title = element_text(face="bold", hjust = -0.065, size = 20), 
+          panel.border = element_rect(size = 1, fill = NA)) +
+    labs(y=expression(delta^15~N),
+         x=expression("N:C"))
+  ,
   
   ggplot(master, aes(zone, om.autoc.proportion)) +
     geom_boxplot(outlier.size = 0, outlier.colour = NULL) +
     labs(y=expression(Proportion~of~autochthonous~OM~""),
          x=expression("")) +
-    scale_x_discrete(limits = c("riverine", "transitional", "lacustrine")) + ggtitle("B") +
+    scale_x_discrete(limits = c("riverine", "transitional", "lacustrine")) + 
+    ggtitle("B") +
     theme(panel.background = element_rect(fill = "white"),
           panel.grid.major = element_blank(),
           text=element_text(size=12),
@@ -74,11 +65,9 @@ om_autoc_graph <- grid.arrange(
 )
 
 ggsave(file = "results/figures/figure4_proportion_autoc_om.pdf", om_autoc_graph, 
-       width=7.3, height = 4, dpi = 300)
+       width=8.4, height = 4, dpi = 1200)
 
 rm(om_autoc_graph)
-rm(biplot)
-rm(grob1)
-rm(p)
-rm(p1)
-rm(dat)
+rm(em_iso)
+rm(em_iso_summary)
+rm(master)

@@ -2,10 +2,12 @@
 
 This contains all data for this project. It is organized into sub-folders:
 
-project
+## Overview
+
+  project
 	|- data                          # raw and primary data, are not changed once created
 	| |- raw                         # raw data, will not be altered; available only on OSF
-	|   |-fastq/                     # raw fastq files 
+	|   |-fastq/                     # raw fastq files; available on OSF or NCBI
 	| |- process                     # cleaned data, will not be altered once created; available on GitHub or OSF
 	|   |-methanogens/               # process data files from 16S sequence analysis in mothur
 	|   +-mixing_model/              # input and output files for mixing model
@@ -13,7 +15,7 @@ project
 	|
 	|- code/                         # any programmatic code
 	|
-	|- results                       # all output from workflows and analyses
+	|- results/                      # all output from workflows and analyses
 	| |- tables/                     # xlsx version of tables generated with scripts
 	| |- figures/                    # figures
 	| +- supplementa_information/    # supplemental tables and figures

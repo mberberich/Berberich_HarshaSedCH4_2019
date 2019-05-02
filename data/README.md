@@ -10,16 +10,18 @@ This contains all data for this project. It is organized into sub-folders:
 	|- LICENSE                       # the license for this project
 	|
 	|- data                          # raw and primary data, are not changed once created
-	| |- raw/                        # raw data, will not be altered
-	| +- process/                    # cleaned data, will not be altered once created;
-	|                                # will be committed to repo
+	| |- raw                         # raw data, will not be altered
+	|   +-fastq/
+	| |- process                     # cleaned data, will not be altered once created;
+	|   |-methanogens/
+	|   +-mixing_model/
 	|
 	|- code/                         # any programmatic code
 	|
 	|- results                       # all output from workflows and analyses
 	| |- tables/                     # xlsx version of tables generated with scripts
 	| |- figures/                    # figures
-	| +- supplementa_information/    # supplemental tables and figures
+	| +- supplemental_information/   # supplemental tables and figures
 	|
 	+- .Rproject                     # executable Makefile for this study, if applicable
 

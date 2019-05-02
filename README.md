@@ -21,7 +21,7 @@ Freshwater reservoirs are an important source of the greenhouse gas methane (CH<
 	|- results                       # all output from workflows and analyses
 	| |- tables/                     # xlsx version of tables generated with scripts
 	| |- figures/                    # figures
-	| +- supplementa_information/    # supplemental tables and figures
+	| +- supplemental_information/   # supplemental tables and figures
 	|
 	+- .Rproject                     # executable Makefile for this study, if applicable
 

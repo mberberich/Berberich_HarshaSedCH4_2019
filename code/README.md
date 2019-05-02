@@ -1,13 +1,10 @@
 ## CODE README
 
-This directory contains all code to generate statitistical output and figures found in Berberich et al. 2018. The data is accessible at the Center for Open Science's Open Science Framework (OSF) webpage. See the project README for details about dependencies and data needed to regenerate figures and statistical output. 
+This directory contains all code to generate statitistical output and figures found in Berberich et al. 2019. The raw data is accessible at the Center for Open Science's Open Science Framework (OSF) webpage. See the project README for details about dependencies and data needed to regenerate figures and statistical output. 
 
-If regenerating this file without using a bash script, it is necessary to run code in the correct sequence. The apporpriate order can be found by opening up the bash script and running the code in the sequence it is presented there. For example:
-* calcuate_CH4_production_rates.R
-* run_mixing_model.R
-* get_good_seqs.batch
-* get_shared_otus.batch
-* 
+If regenerating the analyses, it is necessary to run code in the correct sequence. For simplicity, the sequence can be found in the script: 
+* analysis_sequence.R
+
 
 
 

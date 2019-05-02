@@ -8,8 +8,9 @@ library(readr)
 
 ## read in data
 sample_otus <- read_csv("data/process/methanogens/sample.otus.may.only.csv")
-otu_taxonomy <- read_csv("data/process/methanogens/otu.taxonomy.cleaned.csv")
+otu_taxonomy <- read_csv("data/process/methanogens/otu.taxonomy.csv")
 sample_variables <- read_csv("data/process/methanogens/sample.variables.may.only.csv")
+
 
 
 ## otu_table: OTUs OF SAMPLES ##
@@ -66,7 +67,7 @@ heatmap.genus <- amp_heatmap(data = physeq_meth_n,
             scale.seq = 100,
             group = "site.zone",
             tax.show = 15,
-            tax.add = "Order",
+            #tax.add = "Order",
             plot.na = T,
             plot.theme = "clean",
             color.vector = c("white", "lightskyblue4"),
@@ -74,7 +75,19 @@ heatmap.genus <- amp_heatmap(data = physeq_meth_n,
   scale_x_discrete(limits = c("riverine", "transitional", "lacustrine"))
 
 
-ggsave(file = "results/figures/figure6_methanogen_heatmap_genus.pdf", heatmap.genus, 
+ggsave(file = "results/figures/figure6_methanogen_heatmap_genus_short_names.pdf", heatmap.genus, 
        width=6, height = 4, dpi = 1200)
 
 rm(list = c('sample_otus', 'sample_variables', 'otu_taxonomy', 'otumat.num','sampledata', 'taxmat', 'heatmap.genus', 'OTU', 'physeq', 'physeq_meth', 'physeq_meth_n', 'physeq_O_bacteriales', 'physeq_O_cellales', 'physeq_O_microbia_unclassified', 'physeq_O_microbiales', 'physeq_O_sarcinales', 'TAX'))
+
+
+
+
+
+
+#### TEST ####
+#### 
+
+amp_rarecurve(physeq)
+amp_ordinate(data = physeq, ordinate.type = "PCA")
+amp_ordinate(data = physeq_meth, ordinate.type = "PCA")

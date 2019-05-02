@@ -14,11 +14,13 @@ data/*/*
 mothur*logfile
 *temp*
 *.docx
+*.tiff
 
 submission/*
 exploratory/*
 
-results/pictures/mixing_model_biplot_extras/*
+results/old_versions/*
+results/pictures/*
 
 code/May/*
 code/test/*

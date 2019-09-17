@@ -14,6 +14,7 @@ library(gridExtra)
 library(tibble)
 library(purrr)
 library(tidyverse)
+library(tidyr) # for pivot_longer, verion >+1.0.0
 
 
 
